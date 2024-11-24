@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="/Railway/registration.css">
+</head>
+<body>
+  <div class="flex">
+    <h2>Регистрация</h2>
+    <form action="save_registration.php" method="POST">
+      <div class="input-box">
+        <input class="input-field" type="text" id="username" name="username" required>
+        <label class="input-label" for="username">Имя пользователя</label>
+      </div>
+      <div class="input-box">
+        <input class="input-field" type="password" id="password" name="password" required>
+        <label class="input-label" for="password">Пароль</label>
+      </div>
+      <div class="input-box">
+        <input class="input-field" type="password" id="confirm-password" name="confirm-password" required>
+        <label class="input-label" for="confirm-password">Подтвердите пароль</label>
+      </div>
+      <div class="input-box">
+        <input class="input-field" type="email" id="email" name="email" required>
+        <label class="input-label" for="email">Электронная почта</label>
+      </div>
+      <div class="input-box">
+        <input class="input-field" type="date" id="birthdate" name="birthdate" required>
+        <label class="input-label" for="birthdate">Дата рождения</label>
+      </div>
+      <div>
+        <button class="js-registration-button registration" type="submit">Регистрация</button>
+      </div>
+    </form>
+  </div>
+  <script src="/Railway/registration.js"></script>
+</body>
+</html>
